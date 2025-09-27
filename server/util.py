@@ -33,7 +33,7 @@ def load_saved_artifacts():
 
     global __model
     if __model is None:
-        with open('./artifact/house_prices_model.pickle', 'rb') as f:
+        with open('./artifact/house_prices_model.pkl', 'rb') as f:
             __model = pickle.load(f)
     print("loading saved artifacts...done")
 
